@@ -19,9 +19,10 @@
 <body>
     <h1>Primeiro JavaScript</h1>
     <script>
-        window.alert('Olá, Mundo!')
-        window.confirm('Está gostando de JS?')
-        window.prompt('Qual é o seu nome?')
+       var n1 = Number.parseInt( window.prompt ('Digite o primeiro número')) // transforma n1 de string para numero inteiro
+       var n2 = Number.parseInt(window.prompt ('Digite o segundo número'))
+       var soma = n1 + n2
+       window.alert (`A soma entre ${n1} e ${n2} é ${soma}`) 
     </script>
 </body>
 </html>
