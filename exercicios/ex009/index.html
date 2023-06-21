@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript formato site</title>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+    Em que país você nasceu? <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="checar()">
+    <div id="res">
+        
+    </div>
+    <script>
+        let nacionalidade = '';
+        function checar() {
+            let paisnasc = window.document.querySelector('input#pais');
+            if (paisnasc.value == 'Brasil') {
+                nacionalidade = 'Brasileiro'
+            } else {
+                nacionalidade = 'estrangeiro'
+            }
+            res.innerHTML = `<p> Você nasceu em ${paisnasc.value} então você é ${nacionalidade}.</p>`;
+            return res;
+            
+        }
+    </script>
+</body>
+</html>
